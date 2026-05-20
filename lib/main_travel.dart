@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'travel_page.dart'; // ← обов'язково імпортуємо твій файл
+import 'travel_page.dart';
 
 void main() {
   runApp(const TravelApp());
@@ -12,7 +12,7 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TravelPage(), // ← саме тут вказуємо потрібну сторінку
+      home: TravelPage(), 
     );
   }
 }
