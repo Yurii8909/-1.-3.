@@ -9,7 +9,7 @@ class TravelPage extends StatelessWidget {
       backgroundColor: const Color(0xFFF8F9FB),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: const Color(0xFFF2F5E0), // Колір фону панелі
+        backgroundColor: const Color(0xFFF2F5E0), 
         elevation: 0,
         selectedItemColor: const Color(0xFF1976D2),
         unselectedItemColor: Colors.grey[600],
@@ -42,7 +42,7 @@ class TravelPage extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.fromLTRB(24, 60, 24, 40),
               decoration: const BoxDecoration(
-                color: Color(0xFF00408A), // Темно-синій колір за замовчуванням
+                color: Color(0xFF00408A),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(35),
                   bottomRight: Radius.circular(35),
@@ -62,7 +62,6 @@ class TravelPage extends StatelessWidget {
                   const SizedBox(height: 25),
                   Row(
                     children: [
-                      // Використовуємо стандартний Material іконку grid_view
                       _circleActionButton(Icons.grid_view_outlined),
                       const SizedBox(width: 12),
                       Expanded(child: _destinationDropdown()),
@@ -191,22 +190,20 @@ class TravelPage extends StatelessWidget {
     );
   }
 
-  // Картка для Popular Destinations (виправлено іконку та відступи)
+  // Картка для Popular Destinations 
   Widget _popularCard(String city, String country) {
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
         height: 160,
-        // Відступ зліва 20, щоб текст "Cancun" стояв рівно під іконкою (як на фото 2)
+        // Відступ зліва 20, щоб текст "Cancun" стояв рівно під іконкою
         padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               child: Center(
-                // ВИКОРИСТОВУЄМО СТАНДАРТНУ MATERIAL ІКОНКУ
-                // image_outlined дає саме той порожній контур гір, як у методичці
                 child: Icon(
                   Icons.image_outlined,
                   size: 50,
